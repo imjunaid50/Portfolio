@@ -1,0 +1,20 @@
+.justify-text {
+  text-align: justify;
+  color: #d1c9c9;
+  line-height: 23px;
+}
+.margin-topbtm {
+  margin: 40px 0px;
+}
+.icon-size1 {
+  width: 65px;
+}
+.icon-size2 {
+  width: 53px;
+}
+.icon-size3 {
+  width: 50px;
+}
+.filter-invert1 {
+  filter: invert(1);
+}
