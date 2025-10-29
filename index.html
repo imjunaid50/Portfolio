@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="mediaquerry.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="plogo"><span>J</span>unaid.</div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img
+              class="cross hcs"
+              style="width: 27px"
+              onclick="closemenu()"
+              src="Images/CrossIcon.png"
+              alt="svg"
+            />
+          </ul>
+          <img
+            class="hamburger hcs"
+            style="width: 27px"
+            onclick="openmenu()"
+            src="Images/menu.png"
+            alt="svg"
+          />
+        </nav>
+        <div class="h-text">
+          <div class="web-profile">
+            <img src="Images/WebProfile.png" alt="image" />
+          </div>
+
+          <p>Web / App Developer</p>
+          <h1>Hi, I'm <span>Muhammad Junaid</span> <br />from Pakistan</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About me section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-c1">
+            <img src="Images/AboutMe.jpg" alt="aboutimg" class="aboutimg" />
+          </div>
+          <div class="about-c2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Muhammad Junaid, a passionate Frontend Web Developer
+              focused on building clean, modren and responsive web interface. I
+              specialize in HTML5, CSS3, JavaScript, Tailwind CSS, ReactJS and
+              NextJS - creating seamless digital experiences that combine design
+              and functionality.
+              <br />
+              <br />
+              As a fresher developer, I love to turning ideas into interactive
+              web pages and learning new technologies that push my creativity
+              forward. I pay attention to detail, write clean code and strive to
+              make every project visually appealing and user friendly.
+              <br />
+              <br />I'm currently exploring ways to improve web performance,
+              accessibility and UI/UX design while contributing to real-world
+              projects that make an impact.
+            </p>
+            <div class="tab-titles margin-topbtm">
+              <p class="tab-links active-link" onclick="opentab(`skills`)">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(`experience`)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(`educaion`)">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Web Developer</span><br />HTML5 | CSS3 |
+                  JavaScript | Tailwind CSS | ReactJS | NextJS
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Fresher</span> <br />Looking for internship...
+                  <br /><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="educaion">
+              <ul>
+                <li>
+                  <span>Inter Computer Science</span><br />Islamia College
+                  Peshawar <br />2023 - 2025
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <img
+              class="icons icon-size1 filter-invert1"
+              src="Svg/code.svg"
+              alt="svg"
+            />
+            <h2>Web Design</h2>
+            <p class="justify-text">
+              I use HTML5, CSS3, JavaScript (ES6+), Tailwind CSS / Bootstrap,
+              React.js and Next.js to design website.
+            </p>
+            <a href="services/web_design.html">Learn More</a>
+          </div>
+          <div>
+            <img
+              class="icons icon-size2 filter-invert1"
+              src="Svg/backend.svg"
+              alt="svg"
+            />
+
+            <h2>Backend Development</h2>
+            <p class="justify-text">
+              I use Node.js, Express.js, MongoDB, Mongoose, Authentication (JWT,
+              Bcrypt), API (REST / JSON) and Github.
+            </p>
+            <a href="services/web_backend.html">Learn More</a>
+          </div>
+          <div>
+            <img
+              class="icons icon-size3 filter-invert1"
+              src="Svg/app.svg"
+              alt="svg"
+            />
+            <h2>App Design</h2>
+            <p class="justify-text">
+              I use React to design app UI, interactivity, responsive design and
+              animation.
+            </p>
+            <br />
+            <a href="services/app_design.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/SpotifyClone.jpg" alt="image" />
+            <div class="layer">
+              <h3>Spotify Clone</h3>
+              <p>Click on the link</p>
+              <a href="My Projects/spotify.html"
+                ><img src="Svg/link.svg" alt="link"
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/AnalogueClock.jpg" alt="image" />
+            <div class="layer">
+              <h3>Analogue Clock</h3>
+              <p>Click on the link</p>
+              <a href="My Projects/Analog Clock/Analogue Clock.html"
+                ><img src="Svg/link.svg" alt="link"
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/Calculator.jpg" alt="image" />
+            <div class="layer">
+              <h3>Sample Calculator</h3>
+              <p>Click on the link</p>
+              <a href="My Projects/Calculator/Calculator.html"
+                ><img src="Svg/link.svg" alt="link"
+              /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/AbstractHomePage.jpg" alt="image" />
+            <div class="layer">
+              <h3>Abstract Home Page</h3>
+              <p>Click on the link</p>
+              <a href="My Projects/Abstract Help Page/index.html"
+                ><img src="Svg/link.svg" alt="link"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <a href="My Projects/seemore.html" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="contact-svg">
+              <img src="Svg/mail.svg" alt="svg" /> muhammadjunaid7149@gmail.com
+            </p>
+            <p class="contact-svg">
+              <img class="filter-invert1" src="Svg/phone.svg" alt="svg" /> +92
+              370 9587915
+            </p>
+            <div class="social-icons">
+              <a href="Social Links/github.html"
+                ><img src="Svg/github.svg" alt="logo"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/imjunaid50?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+"
+                ><img src="Svg/linkedin.svg" alt="logo"
+              /></a>
+              <a
+                href="https://www.instagram.com/imjunaid50?igsh=MWFwem5lMHQyY2tkYg==
+"
+                ><img src="Svg/instagram.svg" alt="logo"
+              /></a>
+              <a href="https://x.com/imjunaid50?t=sTqVKj4im5FOxsYeSf8rDg&s=09"
+                ><img src="Svg/twitter.svg" alt="logo"
+              /></a>
+            </div>
+            <a href="Download/My CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-rigth">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Enter Your Name" />
+              <input type="text" name="Email" placeholder="Enter Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn3">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; 2025 | Made by Muhammad Junaid</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
